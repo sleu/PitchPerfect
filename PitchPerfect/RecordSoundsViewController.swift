@@ -67,7 +67,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     func enableButtonUI(_ input: Bool){ //true = not recording
         recordButton.isEnabled = input
         stopRecordingButton.isEnabled = !input
-        print(input)
         recordingLabel.text = input ? "Tap to Record" : "Recording in Progress"
     }
 }
