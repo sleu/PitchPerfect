@@ -22,7 +22,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         enableButtonUI(true)
     }
 
-    @IBAction func RecordAudio(_ sender: Any) {
+    @IBAction func recordAudio(_ sender: Any) {
         enableButtonUI(false)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
